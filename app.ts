@@ -1,6 +1,5 @@
-let message: string = 'Hello, World!';
+let add = function(x: number, y: number): number {
+    return x + y;  
+};
 
-let heading = document.createElement('h1');
-heading.textContent = message;
-
-document.body.appendChild(heading);
+let result = add(10, 20);
