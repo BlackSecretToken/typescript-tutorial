@@ -1,5 +1,18 @@
-let add = function(x: number, y: number): number {
-    return x + y;  
-};
+class Person {
+    ssn;
+    firstName;
+    lastName;
 
-let result = add(10, 20);
+    constructor(ssn, firstName, lastName) {
+        this.ssn =ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+export let person = new Person('171-28-0926','John','Doe');
+console.log(person.getFullName());
